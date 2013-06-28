@@ -1,6 +1,6 @@
 class Board
 	def initialize
-		@phrase = Phrase.new(self)
+		@phrase = Phrase.new
 		@correct = build_correct_array
 		@incorrect = []
 		@spaces = ""

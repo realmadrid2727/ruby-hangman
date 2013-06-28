@@ -1,9 +1,7 @@
 class Phrase
-	def initialize(board)
-		@board = board
-		@solution = selection
+	def initialize
 		@letters = []
-		@solution.each {|l| @letters << l.gsub(/[^a-zA-Z ]/, "")}
+		selection.each {|l| @letters << l.gsub(/[^a-zA-Z ]/, "")}
 	end
 	
 	def selection
